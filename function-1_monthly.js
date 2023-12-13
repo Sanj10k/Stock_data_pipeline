@@ -10,7 +10,7 @@ exports.invokeApiAndPublishToPubSub = async (req, res) => {
     const techsymbols = req.body.symbols;
 
     for (const symbol of techsymbols) {
-      const apiUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${symbol}&apikey=LIKUB79HU5XJSYC4`;
+      const apiUrl = `https://www.alphavantage.co/query?function=TIME_SERIES_MONTHLY&symbol=${symbol}&apikey=${useAPIkey}`;
       const response = await fetch(apiUrl);
       const rawData = await response.json();
 
