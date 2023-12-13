@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "Avro",
+  "fields": [
+    {
+      "name": "event_timestamp",
+      "type": "string"
+    },
+    {
+      "name": "symbol",
+      "type": "string"
+    },
+    {
+      "name": "open_price",
+      "type": "float"
+    },
+    {
+      "name": "high_price",
+      "type": "float"
+    },
+    {
+      "name": "low_price",
+      "type": "float"
+    },
+    {
+      "name": "close_price",
+      "type": "float"
+    },
+    {
+      "name": "volume",
+      "type": "int"
+    }
+  ]
+}
